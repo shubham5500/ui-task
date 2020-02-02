@@ -1,0 +1,24 @@
+.custom-tabs {
+  .nav-tabs {
+    border: none;
+  }
+  .nav-item.nav-link {
+    color: #495057;
+    border: none;
+    border-radius: 32px;
+    padding: 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: 900;
+    font-size: 14px;
+    height: 32px;
+     &.active {
+       background-color: #f1f2f4;
+       color: black;
+     }
+    &:focus {
+      outline: none;
+    }
+  }
+}

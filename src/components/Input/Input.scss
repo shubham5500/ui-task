@@ -1,0 +1,16 @@
+@import "../../utils/variables";
+.input-default {
+  background-color: $light-grey-background !important;
+  border: none;
+  box-shadow: $box-shadow;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &:focus {
+    box-shadow: $box-shadow;
+  }
+  &::placeholder {
+    font-weight: 600;
+  }
+}

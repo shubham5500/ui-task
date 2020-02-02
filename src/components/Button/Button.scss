@@ -1,0 +1,19 @@
+@import "../../utils/variables";
+.custom-btn {
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 26px;
+  &.white {
+    box-shadow: $box-shadow;
+    color: $color-dark-green;
+  }
+  &.green {
+    background-color: $color-dark-green;
+    color: white;
+  }
+  &.blue {
+
+  }
+
+}

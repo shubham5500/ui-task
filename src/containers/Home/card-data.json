@@ -1,0 +1,35 @@
+[
+  {
+    "status": "New",
+    "views": 435,
+    "type": "Live Auction",
+    "title": "Original iPhone Boxes By Apple Liquidation Lot",
+    "currentBid": "$200",
+    "msrp": "$500",
+    "units": 20,
+    "daysLeft": 3,
+    "imgUrl": "1.png"
+  },
+  {
+    "status": "New",
+    "views": 565,
+    "type": "Eligible For Auction",
+    "title": "2 Players RC Battle Boxing Robots by Shift3",
+    "currentBid": "$1200",
+    "msrp": "$4000",
+    "units": 346,
+    "daysLeft": null,
+    "imgUrl": "2.png"
+  },
+  {
+    "status": "New",
+    "views": null,
+    "type": "Newly Listed",
+    "title": "Speakers, LED Lights, DVD Players, Printers, and More Electronics…",
+    "currentBid": "$9200",
+    "msrp": "$12000",
+    "units": 60,
+    "daysLeft": null,
+    "imgUrl": "3.png"
+  }
+]

@@ -1,0 +1,97 @@
+@import "../../utils/variables";
+
+.custom-card {
+  box-shadow: $box-shadow;
+  border-radius: 8px;
+
+  .header {
+    position: relative;
+
+    .status-views {
+      position: absolute;
+      top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      font-size: 10px;
+      font-weight: 600;
+
+      .status {
+        width: 48px;
+        height: 24px;
+        border-radius: 32px;
+        background-color: #e8f9fe;
+        color: #01A2EC;
+        text-transform: uppercase;
+      }
+
+      .views {
+        width: 56px;
+        height: 24px;
+        border-radius: 4px;
+        box-shadow: 0 6px 6px 0 rgba(10, 22, 70, 0.1);
+        background-color: #14284B;
+        color: white;
+      }
+    }
+  }
+
+  .body {
+    .type {
+      position: relative;
+      font-size: 10px;
+      text-transform: uppercase;
+      padding: 5px 10px 5px 10px;
+      border-radius: 4px;
+      font-weight: 600;
+      &.green {
+        background-color: #E8F9FF;
+        color: $color-dark-green;
+      }
+      &.cream {
+        background-color: #FDEECB;
+      }
+      .red-dot {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background-color: #F4541D;
+        left: 4px;
+        border-radius: 50%;
+      }
+    }
+
+    .days-left {
+      font-size: 10px;
+      color: #0081B5;
+      font-weight: 600;
+    }
+    .title {
+      border-bottom: 1px solid #f0f0f0;
+      color: #0A1F44;
+    }
+    .count-and-price {
+      .value {
+        font-size: 16px;
+        font-weight: 600;
+        color: #0A1F44;
+      }
+      .key {
+        color: #8A94A6;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .footer {
+    .watch-btn {
+      padding-left: 30px;
+      padding-right: 30px;
+      color: lighten(black, 10);
+      .yellow-star {
+        color: #F7AF22 !important;
+      }
+    }
+  }
+}

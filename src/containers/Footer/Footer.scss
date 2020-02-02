@@ -1,0 +1,29 @@
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fafbfb;
+  padding: 36px 0 60px 0;
+  .footer-list {
+    list-style-type: none;
+
+    li {
+      &.heading {
+        color: #0A1F44;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+
+      &.links {
+        color: lighten(#4E5D78, 10);
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

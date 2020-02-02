@@ -1,0 +1,47 @@
+@import "utils/variables";
+@import "components/index";
+@import "containers/index";
+@import "utils/variables";
+
+@font-face {
+  font-family: Gilroy;
+  src: url(assets/fonts/Gilroy-Regular.woff) format("opentype");
+}
+body {
+  margin: 0;
+  font-family: Gilroy, sans-serif !important;
+}
+.text-8A94A6 {
+  color: #8A94A6 !important;
+}
+.text-0A1F44 {
+  color: #0A1F44 !important;
+}
+.text-success {
+  color: $color-dark-green;
+}
+.form-control {
+  &:focus {
+    border: none !important;
+    outline: none !important;
+  }
+}
+.input-group-prepend {
+  position: absolute;
+  left: 14px;
+  z-index: 4;
+}
+.c-p {
+  cursor: pointer !important;
+}
+.content-center {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+}
+.all-center {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
