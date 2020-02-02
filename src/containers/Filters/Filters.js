@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {enums} from "../../utils/enums";
 import lodash from 'lodash'
+import Dropdown from "../../components/Dropdown/Dropdown";
 
 class Filters extends Component {
 
@@ -68,6 +69,10 @@ class Filters extends Component {
 
     render() {
         let {state: {locationFilters, msrpFilters, conditionFilters}, filterHandler} = this;
+        const minMaxData = [
+            {name: '$ Min', value: 'LOWEST_PRICE'},
+            {name: '$ Max', value: 'HIGHEST_PRICE'}
+        ];
         return <div className={'filters-wrapper'}>
             <div className="header py-1">
                 <div className={'content-center'}>
@@ -80,6 +85,15 @@ class Filters extends Component {
                 </div>
             </div>
             <div className={'body pt-4'}>
+                <div className="d-flex flex-wrap mb-4">
+                    <div className={'fw-600 f-12 text-0A1F44 w-100 text-uppercase mb-2'}>Price</div>
+                    <Dropdown wrapperClass={'min-max-dropdown with-border'}
+                              selectClass={'py-1 content-center'}
+                              optionArray={minMaxData}/>
+                    <Dropdown wrapperClass={'min-max-dropdown with-border ml-3'}
+                              selectClass={'py-1 content-center'}
+                              optionArray={minMaxData}/>
+                </div>
                 <CheckBoxFilters heading={locationFilters.heading}
                                  filters={locationFilters.filters}
                                  handler={(e, index) => {

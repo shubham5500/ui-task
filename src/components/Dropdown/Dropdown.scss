@@ -1,0 +1,27 @@
+@import "../../utils/variables";
+.custom-dropdown {
+  position: relative;
+  .select {
+    background-color: transparent;
+    border: none;
+    padding: 0 30px 0 10px;
+    color: #8A94A6;
+    font-weight: 600;
+    font-size: 14px;
+    z-index: 1;
+    &:focus {
+      outline: none;
+    }
+  }
+  .down-arrow {
+    position: absolute;
+    right: 6px;
+    z-index: 0;
+  }
+}
+.with-border {
+  .select {
+    border-radius: 4px;
+    border: 1px solid $light-border;
+  }
+}

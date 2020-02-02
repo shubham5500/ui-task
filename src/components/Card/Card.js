@@ -71,9 +71,9 @@ const Card = ({
             <div className={'footer w-100'}>
                 <div className="content-center w-100 py-3 px-3 buttons-wrapper">
                     <Button text={'View Auction'}
-                            classes={'green px-3'}/>
+                            classes={'green w-45 px-0'}/>
                     <Button text={'Watch'}
-                            classes={'white ml-3 watch-btn'}>
+                            classes={'white ml-3 w-45 px-0 watch-btn text-0A1F44'}>
                         <i className="far fa-star yellow-star ml-1"/>
                     </Button>
                 </div>

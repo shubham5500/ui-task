@@ -12,37 +12,42 @@ const Footer = () => {
             {name: 'Join Our Facebook Group: Anteelodesign', link: ''}]
     };
     return (
-        <footer className={'footer-wrapper'}>
-            <div className="col-10 mx-auto">
-                <div className="row">
-                    <div className="col-2">
-                        <div>
-                            <img src={require('../../assets/img/Group 3.svg')}/>
+        <React.Fragment>
+            <footer className={'footer-wrapper'}>
+                <div className="col-md-10 mx-auto">
+                    <div className="row">
+                        <div className="col-md-2">
+                            <div>
+                                <img src={require('../../assets/img/Group 3.svg')}/>
+                            </div>
                         </div>
-                    </div>
-                    <div className="col-10">
-                        <div className="row justify-content-around">
-                            <FootList heading={list1.heading} links={list1.links}/>
-                            <FootList heading={list2.heading} links={list2.links}/>
-                            <FootList heading={list3.heading} links={list3.links}/>
-                            <FootList heading={'Follow Us'}>
-                                <li className={'links'}>
+                        <div className="col-md-10">
+                            <div className="row justify-content-around">
+                                <FootList heading={list1.heading} links={list1.links}/>
+                                <FootList heading={list2.heading} links={list2.links}/>
+                                <FootList heading={list3.heading} links={list3.links}/>
+                                <FootList heading={'Follow Us'}>
+                                    <li className={'links'}>
                                    <span className={'mr-3'}>
                                        <img alt={''} width={18} height={18} src={require('../../assets/img/Facebook.png')}/>
                                    </span>
-                                                    <span className={'mr-3'}>
+                                        <span className={'mr-3'}>
                                        <img alt={''} width={18} height={18} src={require('../../assets/img/Instagram.png')}/>
                                    </span>
-                                                    <span className={'mr-3'}>
+                                        <span className={'mr-3'}>
                                        <img alt={''} width={18} height={18} src={require('../../assets/img/Twitter.png')}/>
                                    </span>
-                                </li>
-                            </FootList>
+                                    </li>
+                                </FootList>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </footer>
+            <div className={'text-center f-10 w-100 py-3'}>
+                © 2018 Invento Lots
             </div>
-        </footer>
+        </React.Fragment>
     )
 };
 
