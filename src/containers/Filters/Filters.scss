@@ -1,0 +1,35 @@
+@import "../../utils/variables";
+
+.filters-wrapper {
+  .header {
+    border-bottom: 1px solid $light-border;
+  }
+}
+
+.checkbox-filters {
+  .heading {
+    color: #4E5D78;
+    font-size: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid $light-border;
+    text-transform: uppercase;
+  }
+
+  .filters {
+    font-size: 14px;
+    cursor: pointer;
+    .checked {
+      color: #0A1F44;
+    }
+
+    .unchecked {
+      color: #4E5D78;
+    }
+    .box {
+      .checked {
+        color: $color-dark-green;
+      }
+      font-size: 20px;
+    }
+  }
+}

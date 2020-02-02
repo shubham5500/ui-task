@@ -3,7 +3,9 @@
 .custom-card {
   box-shadow: $box-shadow;
   border-radius: 8px;
-
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
   .header {
     position: relative;
 
@@ -44,13 +46,16 @@
       padding: 5px 10px 5px 10px;
       border-radius: 4px;
       font-weight: 600;
+
       &.green {
         background-color: #E8F9FF;
         color: $color-dark-green;
       }
+
       &.cream {
         background-color: #FDEECB;
       }
+
       .red-dot {
         position: absolute;
         width: 6px;
@@ -66,16 +71,19 @@
       color: #0081B5;
       font-weight: 600;
     }
+
     .title {
-      border-bottom: 1px solid #f0f0f0;
+      border-bottom: 1px solid $light-border;
       color: #0A1F44;
     }
+
     .count-and-price {
       .value {
         font-size: 16px;
         font-weight: 600;
         color: #0A1F44;
       }
+
       .key {
         color: #8A94A6;
         font-size: 12px;
@@ -85,12 +93,16 @@
   }
 
   .footer {
-    .watch-btn {
-      padding-left: 30px;
-      padding-right: 30px;
-      color: lighten(black, 10);
-      .yellow-star {
-        color: #F7AF22 !important;
+    .buttons-wrapper {
+      justify-content: space-between;
+      .watch-btn {
+        padding-left: 30px;
+        padding-right: 30px;
+        color: lighten(black, 10);
+
+        .yellow-star {
+          color: #F7AF22 !important;
+        }
       }
     }
   }

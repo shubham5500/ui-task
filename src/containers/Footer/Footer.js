@@ -55,7 +55,7 @@ const FootList = ({heading, links, children}) => {
             <li className={'heading'}>{heading}</li>
             {
                 links && links.map(item => {
-                    return <li className={'links'}>{item.name}</li>
+                    return <li key={item.name} className={'links'}>{item.name}</li>
                 })
             }
             {children}

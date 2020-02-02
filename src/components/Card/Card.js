@@ -11,6 +11,7 @@ const Card = ({
                   msrp,
                   units,
                   daysLeft,
+                  wrapperClass
               }) => {
     let typeClass = '';
     switch (type) {
@@ -25,7 +26,7 @@ const Card = ({
             break;
     }
     return (
-        <div className={'custom-card mb-3'}>
+        <div className={`custom-card mb-3 ${wrapperClass && wrapperClass}`}>
             <div className={'header'}>
                 <div>
                     <img width={'100%'}
@@ -67,10 +68,10 @@ const Card = ({
                     </div>
                 </div>
             </div>
-            <div className={'footer'}>
-                <div className="all-center py-3">
+            <div className={'footer w-100'}>
+                <div className="content-center w-100 py-3 px-3 buttons-wrapper">
                     <Button text={'View Auction'}
-                            classes={'green'}/>
+                            classes={'green px-3'}/>
                     <Button text={'Watch'}
                             classes={'white ml-3 watch-btn'}>
                         <i className="far fa-star yellow-star ml-1"/>

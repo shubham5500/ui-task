@@ -20,11 +20,8 @@ body {
 .text-success {
   color: $color-dark-green;
 }
-.form-control {
-  &:focus {
-    border: none !important;
-    outline: none !important;
-  }
+.text-00B571 {
+  color: #00B571;
 }
 .input-group-prepend {
   position: absolute;
@@ -44,4 +41,10 @@ body {
   flex-wrap: wrap !important;
   align-items: center !important;
   justify-content: center !important;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
 }
